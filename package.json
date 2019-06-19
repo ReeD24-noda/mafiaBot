@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "parseChanel.js",
   "scripts": {
-    "start": "node parseChanel.js"
+    "start": "node parseChanel.js",
+    "gitLoad": "git add . & git commit -m 'first commit' & git push -u origin master"
   },
   "engines": {
     "node": "10.7.0"
