@@ -1,14 +1,29 @@
 const MyToken = "783004619:AAHcY59NezuYc0wgT__sGE0ekY62ggjVvtA",
+	Agent = require('socks5-https-client/lib/Agent'),
+
 	TelegramBot = require('node-telegram-bot-api');
 
 var bot;
 
 function connect(){
 	bot = new TelegramBot(MyToken, {
-	  polling: true
+	  polling: true,
+	  request: {
+      agentClass: Agent,
+      agentOptions: {
+        socksHost: 'socksy.seriyps.ru',
+        socksPort: 7777,
+        socksUsername: 'tg-r_ee_d20',
+        socksPassword: 'Le1xPsCa'
+       }
+    } 
 	});
 }
 connect();
+
+bot.on("polling_error", function(err){
+  console.log("polling error");
+});
 
 bot.on("message", (res) => {
 	bot.sendMessage(res.chat.id, "Привет");

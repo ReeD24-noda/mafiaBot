@@ -12,7 +12,8 @@
   "license": "ISC",
   "keywords": [],
   "dependencies": {
-    "node-telegram-bot-api": "^0.30.0"
+    "node-telegram-bot-api": "^0.30.0",
+    "socks5-https-client": "^1.2.1"
   },
   "devDependencies": {},
   "repository": {
