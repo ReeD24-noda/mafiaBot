@@ -1,6 +1,8 @@
 "use strict";
 process.env.PORT;
 
+// "git add . & git commit -m 'first commit' & git push -u origin master"; 
+
 const MyToken = "783004619:AAHcY59NezuYc0wgT__sGE0ekY62ggjVvtA",
 	Agent = require('socks5-https-client/lib/Agent'),
 
