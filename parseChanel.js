@@ -1,5 +1,6 @@
 "use strict";
-process.env.PORT;
+
+const PORT = process.env.PORT || 10150;
 
 // "git add . & git commit -m 'first commit' & git push -u origin master"; 
 
