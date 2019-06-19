@@ -1,0 +1,15 @@
+{
+  "name": "mafia",
+  "version": "1.0.0",
+  "main": "parseChanel.js",
+  "scripts": {
+    "start": "node parseChanel.js"
+  },
+  "engines": {
+  	"node": "10.7.0" 
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}
