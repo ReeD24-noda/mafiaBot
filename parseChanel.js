@@ -1,29 +1,17 @@
-const { Parser } = require('json2csv'),
-	Agent = require('socks5-https-client/lib/Agent'),
-	MyToken = "783004619:AAHcY59NezuYc0wgT__sGE0ekY62ggjVvtA",
-	fs = require("fs"),
+const MyToken = "783004619:AAHcY59NezuYc0wgT__sGE0ekY62ggjVvtA",
 	TelegramBot = require('node-telegram-bot-api');
 
 var bot;
 
 function connect(){
 	bot = new TelegramBot(MyToken, {
-	  polling: true,
-	  request: {
-	    agentClass: Agent,
-	    agentOptions: {
-		    socksHost: 'socksy.seriyps.ru',
-		    socksPort: 7777,
-		    socksUsername: 'tg-r_ee_d20',
-		    socksPassword: 'Le1xPsCa'
-	  	}
-		} 
+	  polling: true
 	});
 }
 connect();
 
 bot.on("message", (res) => {
-	console.log(res);
+	bot.sendMessage(res.chat.id, "Привет");
 });
 
 // bot.sendMessage(191625379, "Привет");

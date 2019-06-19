@@ -6,10 +6,22 @@
     "start": "node parseChanel.js"
   },
   "engines": {
-  	"node": "10.7.0" 
+    "node": "10.7.0"
   },
   "author": "",
   "license": "ISC",
   "keywords": [],
+  "dependencies": {
+    "node-telegram-bot-api": "^0.30.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReeD24-noda/mafiaBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ReeD24-noda/mafiaBot/issues"
+  },
+  "homepage": "https://github.com/ReeD24-noda/mafiaBot#readme",
   "description": ""
 }
