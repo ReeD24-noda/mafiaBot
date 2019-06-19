@@ -21,7 +21,9 @@ bot.on("polling_error", function(err){
 });
 
 bot.on("message", (res) => {
-	bot.sendMessage(res.chat.id, "Привет");
+	if((res.chat.id+"") != "-1001187220601"){
+		bot.sendMessage(res.chat.id, "Привет");
+	}
 });
 
 // bot.sendMessage(191625379, "Привет");
